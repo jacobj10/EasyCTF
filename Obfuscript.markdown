@@ -35,8 +35,8 @@ def check_flag(s):
 	if i != list("hate"):
 		return False
 	return True
-	```
-	It is quite clear that whatever string "s" is being input, it must pass all of the tests to return true. So we can rewrite the script to be:
+```
+It is quite clear that whatever string "s" is being input, it must pass all of the tests to return true. So we can rewrite the script to be:
 ```python
 from string import ascii_uppercase as v, ascii_lowercase as k
 if len(s) != 0x19: 
