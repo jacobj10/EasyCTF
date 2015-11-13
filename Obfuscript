@@ -10,7 +10,7 @@ Note: there may be multiple correct answers. The grader runs the same code that'
 
 OK. So reading this program in Gedit, you see it is:
 
-'''python
+```python
 from string import ascii_uppercase as v, ascii_lowercase as k
 def check_flag(s):
 	if len(s) != 0x19:
@@ -35,4 +35,4 @@ def check_flag(s):
 	if i != list("hate"):
 		return False
 	return True
-	'''
+```
