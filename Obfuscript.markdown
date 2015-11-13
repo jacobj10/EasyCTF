@@ -88,3 +88,14 @@ This yields the output:
 The S index function calls the first time that the character h appears in the list,
 this means that the `len()` of the first output, which is the variable called in the if statement must be equal to the first time the h appears in the NEW LIST
 By substituting in h for d, the if statement is passed over because `2==2`
+So we have found the new string to be `ab4hefghijk0m0o0q0st3vwxy`
+The next gate is where it gets tough. It defines 2 arrays and a variable u, which when printed is `0`
+Conviniently, the second part of the if statement also returns `0`, so this gate is passed automatically.
+
+The next gate is where it actually gets tough. First it is important to note that `^` means XOR (https://en.wikipedia.org/wiki/Bitwise_operation#XOR). So first, printing the contents of Y and Z reveals it to be
+```python
+['y', 'w']                                                                                                                 
+['x', 'v'] 
+```
+Thereore `y[0]` and `z[0]` are y and x respectively. The `ord` then takes the ASCII value of said characters. So the binary bits of the ASCII's of each character should equal the binary of `30`, which is `0b11110`.
+We did not know much about binary, so a guess and check method was effective. By printing the `bin()` of each of the ASCII values, 
