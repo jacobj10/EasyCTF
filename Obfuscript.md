@@ -118,6 +118,6 @@ OK. THE LAST GATE. It defines `i[1:3] = i[2:0:-1]` and states:
 if i != list("hate"):
 	print "Fail7"
 ```
-Printing i reveals it to be `['h', 'q', 'o', 's']` and it should equal `['h', 'a', 't', 'e']`. Well simply just modify the string to finally get `s="s="WR4heTHOiOO0O0t0a0eS3vwdz"`.
+Printing i reveals it to be `['h', 'q', 'o', 's']` and it should equal `['h', 'a', 't', 'e']`. Well simply just modify the string to finally get `s="WR4heTHOiOO0O0t0a0eS3vwdz"`.
 
 flag=WR4heTHOiOO0O0t0a0eS3vwdz
