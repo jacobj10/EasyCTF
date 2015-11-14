@@ -106,3 +106,9 @@ if v.index(s.pop()) ^ len(s) ^ 0x1e != 0:
 	print "Fail5"
 ```
 It is saying that the value popped (the value at the end of the list, which when printed is `t`) the first iteration of said value in the list of capital letters XORed with the `len(s)` which is `12`, should be equal to `0x1e` or `30`. Since the 12 is constant, we can say that `?^12==30`, quick expirimentation gives this value to be `18`, which would be the 19th letter in the alphabet, or `S`. Our new string is now `s="ab4hefghijk0m0o0q0sS3vwdz"`
+The next gate defines `a, i = filter(lambda c: c in v, s), filter(lambda c: c in k, s)`. `a` all of the upperase letters in `s`, and i is all the lowercase. Keep in mind this is not of the original string, but of the dynamic one, which when printed is: `['a', 'b', 'h', 'f', 'g', 'h', 'j', 'k', 'm', 'o', 'q', 's']`. The printing both contents of the if statement reveals them to be:
+```python
+[87, 82, 84, 72, 79, 79, 79, 79]                               
+[] 
+```
+Looking at the contents of the if statement it is shown the `ord()` of the contents of `a` must be equal to the first output. This is easy, just replace the first eight letters in the new list with that of the `chr()` of those ASCII values. We avoided replacing anything that was being used in the previous gates. Our new string was: `s="WR4heTHOiOO0O0o0q0sS3vwdz"`
