@@ -112,3 +112,12 @@ The next gate defines `a, i = filter(lambda c: c in v, s), filter(lambda c: c in
 [] 
 ```
 Looking at the contents of the if statement it is shown the `ord()` of the contents of `a` must be equal to the first output. This is easy, just replace the first eight letters in the new list with that of the `chr()` of those ASCII values. We avoided replacing anything that was being used in the previous gates. Our new string was: `s="WR4heTHOiOO0O0o0q0sS3vwdz"`
+
+OK. THE LAST GATE. It defines `i[1:3] = i[2:0:-1]` and states:
+```python
+if i != list("hate"):
+	print "Fail7"
+```
+Printing i reveals it to be `['h', 'q', 'o', 's']` and it should equal `['h', 'a', 't', 'e']`. Well simply just modify the string to finally get `s="s="WR4heTHOiOO0O0t0a0eS3vwdz"`.
+
+flag=WR4heTHOiOO0O0t0a0eS3vwdz
